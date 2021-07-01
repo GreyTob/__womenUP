@@ -7,13 +7,13 @@ import firebase from 'firebase'
 import 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDwiiCwRG_bAwlmVoQXYgHBSGDExZ9vIYQ',
-  authDomain: 'test-wup-9d3da.firebaseapp.com',
-  projectId: 'test-wup-9d3da',
-  storageBucket: 'test-wup-9d3da.appspot.com',
-  messagingSenderId: '204649464963',
-  appId: '1:204649464963:web:ba24f0c5902a0aeb3e47b6',
-  measurementId: 'G-D9N6V7F483',
+  apiKey: 'AIzaSyBYNvp75-XezEMJxtunCpIt8SEcAJ-soVE',
+  authDomain: 'finalwomenup.firebaseapp.com',
+  projectId: 'finalwomenup',
+  storageBucket: 'finalwomenup.appspot.com',
+  messagingSenderId: '917458011154',
+  appId: '1:917458011154:web:ddd95a853de1dd648044cb',
+  measurementId: 'G-PKFFE4FFZJ',
 }
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)

@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Context } from './index'
 import { useCollectionData } from 'react-firebase-hooks/firestore'
-// import firebase from 'firebase'
 import 'firebase/firestore'
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
    * функция добавляет объект с именем пользователя, сообщением и датой в firestore коллекцию, после чего отчищает поля ввода. Поле date используется для сортировки коллекции по дате отправления сообщения
    *@param {string} name имя пользователя
    *@param {string} value текст сообщения
-   *@param {number} data текст сообщения
+   *@param {number} data дата в милисекундах
    */
   const sendMessage = async (name, value, data) => {
     firestore.collection('sends').add({
@@ -31,6 +30,8 @@ function App() {
   if (loader) {
     return 'загрузка'
   }
+
+  console.log(sends)
 
   return (
     <>
